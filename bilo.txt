@@ -1,0 +1,32 @@
+Generate a video script about the ${topic} in JSON format, structured as an array of scenes. Each scene should have the following properties:
+
+- scene_duration: Number (in seconds), determined based on the audio text length.
+- scene_description: A clear and detailed description of events in the scene, including visuals and actions relevant to the script. Make sure the scenes flow well, creating a cohesive storyline.
+- audio_text: A fitting narration or dialogue that corresponds to the scene’s action and theme. This should be relevant to the visual description and add depth to the scene.
+- image_prompt: A description of visual elements needed for generating images or animations based on the scene, such as colors, characters, emotions, or environments.
+- image_file_name: Automatically generate the filename for the scene’s image, e.g., "scene1_image.png".
+- audio_file_name: Automatically generate the filename for the scene’s audio, e.g., "scene1_audio.mp3".
+
+You are allowed to create the scenes based on your understanding of the topic, but ensure the script fits into a 1-minute video short (around 60 seconds in total). Each scene should have an appropriate duration based on the importance of the content.
+
+Example response for a 1-minute video about "Naruto":
+
+```json
+[
+  {
+    "scene_duration": 12,
+    "scene_description": "willpower shine through as ..........",
+    "audio_text": "up, no matter what! .........",
+    "image_prompt": " a victorious expression.........",
+    "image_file_name": "scene1_image.png",
+    "audio_file_name": "scene1_audio.mp3"
+  },
+  {
+    "scene_duration": 22,
+    "scene_description": "willpower shine through as ..........",
+    "audio_text": "up, no matter what! .........",
+    "image_prompt": " a victorious expression.........",
+    "image_file_name": "scene2_image.png",
+    "audio_file_name": "scene2_audio.mp3"
+  },
+]
